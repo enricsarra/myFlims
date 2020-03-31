@@ -1,0 +1,36 @@
+<div class="jumbotron jumbotron-fluid ">
+
+    <div class="container">
+        <h1 class="display-3">MyFlims. 🎬
+        </h1>
+        <h4 class="lead">Preparanme per quan em jubili 😀</h4>
+        <h4 class="lead">Podeu teclejar les fotos (exepte les 2 primeres) per anar a cercar més informació. </h4>
+        <h4 class="lead"> Si teniu una tablet o pc, ho podeu provar. Així puc sapiguer on es veu malament. </h4>
+        <h4 class="lead"> Gracies per la vostra col.laboració 🤓</h4>
+        <div class="row d-flex justify-content-around ">
+            <div class="col col-sm-6 ">
+                <span>
+                    <img src="../../../assets/img/raki.png" class="img-fluid  max-width img-thumbnail ">
+                </span>
+            </div>
+            <div class="col col-sm-6">
+                <span href="#" target="_blank">
+                    <img src="/assets/img/banner-fira3-organya-ico.png" class="img-fluid  max-width img-thumbnail">🎬🎞📽
+
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-light mt-1">
+        <br>
+
+        <!-- Solo mandamos 6 peliculas -->
+        <app-galeria [peliculas]="cartelera|slice:0:6" titulo="Flims cartelera"></app-galeria>
+
+        <app-galeria [peliculas]="populares|slice:0:6" titulo="Populars"></app-galeria>
+
+        <app-galeria [peliculas]="popularesNinos|slice:0:6" titulo="Populars entre els més petits"></app-galeria>
+
+
+    </div>
